@@ -33,8 +33,7 @@ app.get("/", (req, res) => {
       console.log("Database error:", err);
       return res.status(500).json({
         errorMessage:
-          "An error occurred while fetching data from the database.",
-        error: err,
+          "An error occurred while fetching data from the database."
       });
     } else {
       // SEND BACK DATA
